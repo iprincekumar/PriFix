@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PriFix</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="faviconnew/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="faviconnew/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="faviconnew/favicon-16x16.png">
+    <link rel="manifest" href="faviconnew/site.webmanifest">
+</head>
+<body>
+    <!-- all the content should be inside this video -->
+    <div class="video-background">
+        <!-- bringing the video -->
+        <video autoplay loop muted>
+            <source src="Salaar.mp4" type="video/mp4">
+        </video>
+
+        <div class="content">
+            <img src="saalar1.png" alt="movie title image" class="title-img">
+            <!-- <h1>Welcome to Netflix</h1> -->
+            <p>This is a fully Action and Thriller Movie, and directed by Prashanth Neel, and produced by Vijay Kiragandur!!</p>
+            
+            <div class="buttons">
+            <a href="https://www.dailymotion.com/video/x8u1y3e" style="text-decoration: none;" target="_blank">
+                <button class="btn play">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" id="play"><path fill="none" d="M0 0h48v48H0z"></path><path d="m20 33 12-9-12-9v18zm4-29C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm0 36c-8.82 0-16-7.18-16-16S15.18 8 24 8s16 7.18 16 16-7.18 16-16 16z"></path></svg>
+                    Subscribe to watch
+                </button>
+            </a>
+            <a href="https://www.imdb.com/title/tt13927994/" target="_blank" style="text-decoration: none;">
+                <button class="btn more-info">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" id="info"><path d="M24,46A22,22,0,1,1,46,24,22.025,22.025,0,0,1,24,46ZM24,4A20,20,0,1,0,44,24,20.023,20.023,0,0,0,24,4Z"></path><path d="M23.75 19.25A4.75 4.75 0 1128.5 14.5 4.756 4.756 0 0123.75 19.25zm0-7.5A2.75 2.75 0 1026.5 14.5 2.752 2.752 0 0023.75 11.75zM29 38H19a1 1 0 01-1-1V36a1 1 0 01.553-.9A2.6 2.6 0 0020 32.764V26.236A2.6 2.6 0 0018.553 23.9 1 1 0 0118 23V22a1 1 0 011-1h8a1 1 0 011 1V32.866a2.464 2.464 0 001.421 2.227A1 1 0 0130 36v1A1 1 0 0129 38zm-8.319-2h6.61A4.468 4.468 0 0126 32.866V23H20.681A4.6 4.6 0 0122 26.236v6.528A4.6 4.6 0 0120.681 36z"></path></svg>
+                    More Info
+                </button>
+            </a>
+            </div>
+        </div>
+    </div>
+
+    <!--------------- NAV BAR DIV --------------->
+    <div class="navbar">
+
+        <!--------------- LEFT ALIGNMENT IN NAV BAR --------------->
+        <div class="left-nav"> 
+            <!--------------- NAV BAR - LOGO --------------->
+            <a href="/browse" class="logo">
+                <img src="prifix.png" alt="PriFix Logo">
+            </a>
+        
+            <!--------------- NAV BAR - MENU --------------->
+            <ul class="navigation">
+                <li><a href="/browse">Home</a></li>
+                <li><a href="/browse/genre/83">TV Shows</a></li>
+                <li><a href="/browse/genre/34399">Movies</a></li>
+                <li><a href="/latest">New & Popular</a></li>
+                <li><a href="/browse/my-list">My List</a></li>
+                <li><a href="/browse/original-audio">Browse by Languages</a></li>
+            </ul>
+        </div>
+
+        <!--------------- RIGHT ALIGNMENT IN NAV BAR --------------->
+        <div class="right-nav"> 
+            <button class="icon-search" aria-label="Search">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="24" height="24">
+                    <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/>
+                </svg>
+            </button>
+
+            <a href="/Kids">Children</a>
+
+            <button class="icon-bell" aria-label="Notifications">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="24" height="24">
+                    <path d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v25.4c0 45.4-15.5 89.5-43.8 124.9L5.3 377c-5.8 7.2-6.9 17.1-2.9 25.4S14.8 416 24 416H424c9.2 0 17.6-5.3 21.6-13.6s2.9-18.2-2.9-25.4l-14.9-18.6C399.5 322.9 384 278.8 384 233.4V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm0 96c61.9 0 112 50.1 112 112v25.4c0 47.9 13.9 94.6 39.7 134.6H72.3C98.1 328 112 281.3 112 233.4V208c0-61.9 50.1-112 112-112zm64 352H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7s18.7-28.3 18.7-45.3z"/>
+                </svg>
+                <span class="notification-count">8</span>
+            </button>
+
+            <div class="profile">
+                <img src="faviconnew/apple-touch-icon.png" alt="User Profile" class="profile-pic">
+                <div class="dropdown">
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Account</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Sign Out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
